@@ -1,0 +1,31 @@
+{
+  "name": "abdul-rehman",
+  "version": "1.0.0",
+  "description": "This is a Portfolio.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "Abdul-Rehman",
+  "license": "ISC",
+  "dependencies": {
+    "clipboard-copy": "^4.0.1",
+    "framer-motion": "^12.10.1",
+    "leaflet": "^1.9.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-leaflet": "^5.0.0",
+    "react-router-dom": "^6.30.0"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.27.1",
+    "@parcel/packager-raw-url": "^2.14.4",
+    "@parcel/transformer-webmanifest": "^2.14.4",
+    "gh-pages": "^6.3.0",
+    "parcel": "^2.14.4",
+    "svgo": "^3.3.2"
+  }
+}

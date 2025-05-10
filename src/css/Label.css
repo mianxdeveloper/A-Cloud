@@ -1,0 +1,50 @@
+.label {
+    width: 90vw;
+    background-color: white;
+    margin-bottom: 5vw;
+    padding: 2vw 4vw;
+    border-radius: 5px;
+    box-shadow: 0 0 25px rgb(198, 198, 214);
+    font-family: var(--font-family);
+    font-size: 1.6vw;
+    font-weight: 500;
+}
+
+.folder {
+    color: var(--theme-color);
+}
+
+
+@media (min-width: 845px) and (max-width: 945px){
+    .label{
+        font-size: 2.7vw;
+        padding: 3vw 4vw;
+    }
+}
+
+@media (min-width: 645px) and (max-width: 845px){
+    .label{
+        font-size: 3vw;
+        padding: 3vw 4vw;
+    }
+}
+
+
+
+
+@media (min-width: 495px) and (max-width: 645px){
+    .label{
+        font-size: 3.5vw;
+        padding: 4vw;
+    }
+}
+
+
+
+
+@media  (max-width: 495px){
+    .label{
+        font-size: 4.5vw;
+        padding: 4vw 5.5vw;
+    }
+}

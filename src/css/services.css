@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: metro-regular;
+    src: url(/src/Fonts/Metropolis-Regular.otf);
+}
+@font-face {
+    font-family: metro-bold;
+    src: url(/src/Fonts/metropolis-bold.otf);
+}
+@font-face {
+    font-family: metro-semi;
+    src: url(/src/Fonts/metropolis-semi-bold.otf);
+}
+
+
+:root {
+    --theme-color: #DD3D31;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color:  #F2F6FC;
+
+}
+
+.page2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.content2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+.AllCards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 5vw;
+    flex-wrap: wrap;
+    width: 90vw;
+}
+
+.filterBtns{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3vw 4vw 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.filter{
+    font-size: 1.4vw;
+    font-family: var(--font-family);
+    font-weight: 600;
+    margin: 1vw;
+    padding: .5vw 1.2vw;
+    border: 1px solid rgb(146, 146, 146);
+    color: rgb(68, 68, 68);
+    background-color: rgb(235, 235, 235);
+    border-radius: 5px;
+}
+
+.active3{
+    background-color: var(--theme-color);
+    color: white;
+    border: 1px solid var(--theme-color);
+}
+
+
+@media (min-width: 845px) and (max-width: 945px){
+    .filter{
+        font-size: 2vw;
+        margin: 1.5vw;
+        padding: 1vw 2vw;
+    } 
+}
+
+
+
+
+@media (min-width: 645px) and (max-width: 845px){
+    .filter{
+        font-size: 2.3vw;
+        margin: 1.5vw;
+        padding: 1vw 2vw;
+        margin-top: 5vw;
+    } 
+}
+
+
+
+
+@media (min-width: 495px) and (max-width: 645px){
+    .filter{
+        font-size: 2.9vw;
+        margin: 1.5vw;
+        padding: 1vw 2vw;
+        margin-top: 5vw;
+    }    
+}
+
+
+@media (max-width: 495px){
+    .content2{
+        margin-top: 120px;
+    }
+
+    .filter{
+        font-size: 3.8vw;
+        margin: 1.5vw;
+        padding: 1.5vw 3.5vw;
+        margin-top: 8vw;
+    } 
+}

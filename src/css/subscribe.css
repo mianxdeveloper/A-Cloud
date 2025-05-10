@@ -1,0 +1,147 @@
+.subscribe-Container{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F6FC;
+}
+
+.subscribe{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 93vw;
+    background-color: white;
+    border-radius: 10px;
+    margin: 5vw 0;
+    padding: 3vw 4vw;
+    box-shadow: 0 0 25px rgb(214, 214, 214);
+}
+
+.subscribe p{
+    font-size: 2vw;
+    font-family: var(--font-family);
+    color: rgb(58, 58, 58);
+    font-weight: 500;
+}
+
+.subscribeForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vw 0;
+    width: 100%;
+}
+
+.subscribeFormEmail{
+    padding: 10px  25px;
+    font-size: 25px;
+    font-family: var(--font-family);
+    outline: none;
+    border: 1px solid rgb(161, 161, 161);
+    width: 90%;
+    border-radius: 5px 0 0 5px;
+    color: rgb(90, 90, 90);
+    font-weight: 500;
+}
+
+.subscribeFormBtn{
+    padding: 10px  25px;
+    font-size: 25px;
+    font-weight: 500;
+    border: 1px solid var(--theme-color);
+    border-radius: 0 5px 5px 0;
+    background-color: var(--theme-color);
+    color: white;
+    outline: none;
+    font-family: var(--font-family);
+}
+
+
+@media (min-width: 845px) and (max-width: 945px){
+
+    .subscribe{
+        padding: 7vw 5vw;
+    }
+    .subscribe p{
+        font-size: 3vw;
+    }
+
+    .subscribeFormEmail{
+        font-size: 2.6vw;
+    }
+
+    .subscribeFormBtn{
+        font-size: 2.6vw;
+    }
+}
+
+
+
+
+
+
+@media (min-width: 645px) and (max-width: 845px){
+
+    .subscribe{
+        padding: 7vw 5vw;
+    }
+    .subscribe p{
+        font-size: 3.5vw;
+        margin-bottom: 10px;
+    }
+
+    .subscribeFormEmail{
+        font-size: 3vw;
+    }
+
+    .subscribeFormBtn{
+        font-size: 3vw;
+    }
+}
+
+
+
+@media (min-width: 495px) and (max-width: 645px){
+
+    .subscribe{
+        padding: 7vw 5vw;
+    }
+    .subscribe p{
+        font-size: 4.5vw;
+        margin-bottom: 10px;
+    }
+
+    .subscribeFormEmail{
+        font-size: 3.6vw;
+    }
+
+    .subscribeFormBtn{
+        font-size: 3.6vw;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 495px){
+
+    .subscribe{
+        padding: 7vw 5vw;
+    }
+    .subscribe p{
+        font-size: 5.8vw;
+        margin-bottom: 15px;
+    }
+
+    .subscribeFormEmail{
+        font-size: 5vw;
+        width: 70%;
+    }
+
+    .subscribeFormBtn{
+        font-size: 5vw;
+    }
+}
