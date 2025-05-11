@@ -2,10 +2,12 @@
   "name": "abdul-rehman",
   "version": "1.0.0",
   "description": "This is a Portfolio.",
+  "homepage": "https://github.com/mianxdeveloper/A-Cloud",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],
