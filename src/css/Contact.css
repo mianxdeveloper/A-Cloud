@@ -32,6 +32,9 @@ html {
     margin-top: 150px;
 }
 
+.ContactForm{
+    margin-top: 0;
+}
 
 .contactAside {
     align-self: stretch;

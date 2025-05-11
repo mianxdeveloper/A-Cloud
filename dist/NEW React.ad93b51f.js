@@ -26767,7 +26767,19 @@ const Form = ({ sideContent, sideClassName = "", formNextClass = "" })=>{
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
                     className: "Form",
+                    name: "Contact",
+                    method: "POST",
+                    "data-netlify": "true",
                     children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "hidden",
+                            name: "form-name",
+                            value: "Contact"
+                        }, void 0, false, {
+                            fileName: "src/components/Form.jsx",
+                            lineNumber: 10,
+                            columnNumber: 21
+                        }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                             className: "Formheading",
                             children: [
@@ -26778,26 +26790,26 @@ const Form = ({ sideContent, sideClassName = "", formNextClass = "" })=>{
                                             children: "Work Together"
                                         }, void 0, false, {
                                             fileName: "src/components/Form.jsx",
-                                            lineNumber: 11,
+                                            lineNumber: 13,
                                             columnNumber: 35
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Form.jsx",
-                                    lineNumber: 11,
+                                    lineNumber: 13,
                                     columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                     children: "I'm here to help if you're searching for a product designer to bring your idea to life or a design partner to help take your business to the next level."
                                 }, void 0, false, {
                                     fileName: "src/components/Form.jsx",
-                                    lineNumber: 12,
+                                    lineNumber: 14,
                                     columnNumber: 25
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Form.jsx",
-                            lineNumber: 10,
+                            lineNumber: 12,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -26813,7 +26825,7 @@ const Form = ({ sideContent, sideClassName = "", formNextClass = "" })=>{
                                             required: true
                                         }, void 0, false, {
                                             fileName: "src/components/Form.jsx",
-                                            lineNumber: 16,
+                                            lineNumber: 18,
                                             columnNumber: 29
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -26822,13 +26834,13 @@ const Form = ({ sideContent, sideClassName = "", formNextClass = "" })=>{
                                             placeholder: "Last Name"
                                         }, void 0, false, {
                                             fileName: "src/components/Form.jsx",
-                                            lineNumber: 17,
+                                            lineNumber: 19,
                                             columnNumber: 29
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Form.jsx",
-                                    lineNumber: 15,
+                                    lineNumber: 17,
                                     columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -26838,7 +26850,7 @@ const Form = ({ sideContent, sideClassName = "", formNextClass = "" })=>{
                                     required: true
                                 }, void 0, false, {
                                     fileName: "src/components/Form.jsx",
-                                    lineNumber: 19,
+                                    lineNumber: 21,
                                     columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -26848,11 +26860,12 @@ const Form = ({ sideContent, sideClassName = "", formNextClass = "" })=>{
                                     required: true
                                 }, void 0, false, {
                                     fileName: "src/components/Form.jsx",
-                                    lineNumber: 20,
+                                    lineNumber: 22,
                                     columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
                                     className: "select",
+                                    name: "select",
                                     required: true,
                                     defaultValue: "",
                                     children: [
@@ -26863,7 +26876,7 @@ const Form = ({ sideContent, sideClassName = "", formNextClass = "" })=>{
                                             children: "Select Budget"
                                         }, void 0, false, {
                                             fileName: "src/components/Form.jsx",
-                                            lineNumber: 22,
+                                            lineNumber: 24,
                                             columnNumber: 29
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -26872,7 +26885,7 @@ const Form = ({ sideContent, sideClassName = "", formNextClass = "" })=>{
                                             children: "$50"
                                         }, void 0, false, {
                                             fileName: "src/components/Form.jsx",
-                                            lineNumber: 23,
+                                            lineNumber: 25,
                                             columnNumber: 29
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -26881,7 +26894,7 @@ const Form = ({ sideContent, sideClassName = "", formNextClass = "" })=>{
                                             children: "$50 - $100"
                                         }, void 0, false, {
                                             fileName: "src/components/Form.jsx",
-                                            lineNumber: 24,
+                                            lineNumber: 26,
                                             columnNumber: 29
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -26890,7 +26903,7 @@ const Form = ({ sideContent, sideClassName = "", formNextClass = "" })=>{
                                             children: "$100 - $200"
                                         }, void 0, false, {
                                             fileName: "src/components/Form.jsx",
-                                            lineNumber: 25,
+                                            lineNumber: 27,
                                             columnNumber: 29
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -26899,20 +26912,21 @@ const Form = ({ sideContent, sideClassName = "", formNextClass = "" })=>{
                                             children: "$200+"
                                         }, void 0, false, {
                                             fileName: "src/components/Form.jsx",
-                                            lineNumber: 26,
+                                            lineNumber: 28,
                                             columnNumber: 29
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Form.jsx",
-                                    lineNumber: 21,
+                                    lineNumber: 23,
                                     columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
-                                    placeholder: "Enter your Message.."
+                                    placeholder: "Enter your Message..",
+                                    name: "message"
                                 }, void 0, false, {
                                     fileName: "src/components/Form.jsx",
-                                    lineNumber: 28,
+                                    lineNumber: 30,
                                     columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -26924,19 +26938,19 @@ const Form = ({ sideContent, sideClassName = "", formNextClass = "" })=>{
                                             className: "ri-arrow-right-up-long-line"
                                         }, void 0, false, {
                                             fileName: "src/components/Form.jsx",
-                                            lineNumber: 29,
+                                            lineNumber: 31,
                                             columnNumber: 74
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Form.jsx",
-                                    lineNumber: 29,
+                                    lineNumber: 31,
                                     columnNumber: 25
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Form.jsx",
-                            lineNumber: 14,
+                            lineNumber: 16,
                             columnNumber: 21
                         }, undefined)
                     ]

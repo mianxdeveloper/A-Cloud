@@ -2112,6 +2112,10 @@ body, html {
   display: flex;
 }
 
+.ContactForm {
+  margin-top: 0;
+}
+
 .contactAside {
   align-self: stretch;
   padding: 5vw !important;
