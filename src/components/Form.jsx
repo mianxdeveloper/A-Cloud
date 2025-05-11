@@ -1,12 +1,14 @@
 import React from "react";
 import "../css/Form.css";
 
-const Form = ({ sideContent, sideClassName = "", formNextClass="" }) => {
+const Form = ({ sideContent, sideClassName = "", formNextClass = "" }) => {
     return (
         <>
             <section className={`FormPlus ${formNextClass}`}>
                 <div className={`sideFormSection ${sideClassName}`}>{sideContent}</div>
-                <form className="Form" name="Contact" method="POST" netlify>
+                <form className="Form" name="Contact" method="POST" data-netlify="true">
+                    <input type="hidden" name="form-name" value="Contact" />
+
                     <span className="Formheading">
                         <h1>Let's <span>Work Together</span></h1>
                         <p>I'm here to help if you're searching for a product designer to bring your idea to life or a design partner to help take your business to the next level.</p>
