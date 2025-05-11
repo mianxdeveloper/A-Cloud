@@ -2081,6 +2081,37 @@ nav a:hover {
   }
 }
 
+.fallback {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.fallback h1 {
+  font-size: 32px;
+}
+
+.fallback h1 span {
+  color: var(--theme-color);
+}
+
+.back-btn {
+  font-size: 20px;
+  font-family: var(--font-family);
+  color: #fff;
+  background-color: var(--theme-color);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin: 15px auto;
+  padding: 10px 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
 * {
   box-sizing: border-box;
 }

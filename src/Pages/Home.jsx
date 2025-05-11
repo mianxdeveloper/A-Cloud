@@ -5,6 +5,7 @@ import { Link, NavLink } from "react-router-dom";
 import clipboardCopy from 'clipboard-copy';
 import Subscribe from "../components/Subscribe";
 import Form from "../components/Form";
+import { useRef } from "react";
 
 const frontRightImg = new URL('../img/content-pana.svg', import.meta.url).href;
 
@@ -17,9 +18,14 @@ const JSEx = new URL('../img/javascript.svg', import.meta.url).href;
 const ReactEx = new URL('../img/react.svg', import.meta.url).href;
 const FigmaEx = new URL('../img/figma.svg', import.meta.url).href;
 
-
-
 const Home = () => {
+
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "923227904989";
+    const message = "Hi, I want to work with you!";
+    const url = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+    window.open(url, '_blank');
+  };
 
   const email = "disclaimerface@gmail.com";
 
@@ -42,7 +48,7 @@ const Home = () => {
 
             <p>A Passionate Frontend developer, React, Wordpress having 2+ years of Experience in web innovation..</p>
             <span className="leftBtns">
-              <NavLink className="leftBtns1"><i className="ri-whatsapp-line"></i> WhatsApp</NavLink>
+              <NavLink className="leftBtns1" onClick={handleWhatsAppClick}><i className="ri-whatsapp-line"></i> WhatsApp</NavLink>
               <NavLink onClick={handleCopy} className="leftBtns2"><i className="ri-file-copy-line"></i>&nbsp; Copy Email</NavLink>
             </span>
           </div>
