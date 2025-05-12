@@ -4,7 +4,7 @@ import "../css/subscribe.css";
 const Subscribe =()=>{
     return (
         <>
-          <section className="subscribe-Container">
+          <section className="subscribe-Container" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800">
             <div className="subscribe">
                 <p><i className="ri-mail-check-line"></i> Wants to get updates. Subscribe here!</p>
                 <form className="subscribeForm">

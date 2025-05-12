@@ -23515,6 +23515,8 @@ const Home = ()=>{
                                 className: "leftFront",
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                        "data-aos": "fade-right",
+                                        "data-aos-duration": "800",
                                         children: [
                                             "I'm ",
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -23522,25 +23524,29 @@ const Home = ()=>{
                                             }, void 0, false, {
                                                 fileName: "src/Pages/Home.jsx",
                                                 lineNumber: 46,
-                                                columnNumber: 19
+                                                columnNumber: 21
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/Pages/Home.jsx",
                                         lineNumber: 45,
-                                        columnNumber: 13
+                                        columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        "data-aos": "fade-right",
+                                        "data-aos-duration": "1000",
                                         children: "A Passionate Frontend developer, React, Wordpress having 2+ years of Experience in web innovation.."
                                     }, void 0, false, {
                                         fileName: "src/Pages/Home.jsx",
                                         lineNumber: 49,
-                                        columnNumber: 13
+                                        columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                         className: "leftBtns",
                                         children: [
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
+                                                "data-aos": "fade-right",
+                                                "data-aos-duration": "1200",
                                                 className: "leftBtns1",
                                                 onClick: handleWhatsAppClick,
                                                 children: [
@@ -23549,16 +23555,18 @@ const Home = ()=>{
                                                     }, void 0, false, {
                                                         fileName: "src/Pages/Home.jsx",
                                                         lineNumber: 51,
-                                                        columnNumber: 76
+                                                        columnNumber: 125
                                                     }, undefined),
                                                     " WhatsApp"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/Pages/Home.jsx",
                                                 lineNumber: 51,
-                                                columnNumber: 15
+                                                columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
+                                                "data-aos": "fade-right",
+                                                "data-aos-duration": "1300",
                                                 onClick: handleCopy,
                                                 className: "leftBtns2",
                                                 children: [
@@ -23567,26 +23575,26 @@ const Home = ()=>{
                                                     }, void 0, false, {
                                                         fileName: "src/Pages/Home.jsx",
                                                         lineNumber: 52,
-                                                        columnNumber: 67
+                                                        columnNumber: 116
                                                     }, undefined),
                                                     "\xa0 Copy Email"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/Pages/Home.jsx",
                                                 lineNumber: 52,
-                                                columnNumber: 15
+                                                columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/Pages/Home.jsx",
                                         lineNumber: 50,
-                                        columnNumber: 13
+                                        columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Pages/Home.jsx",
                                 lineNumber: 43,
-                                columnNumber: 11
+                                columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "rightFront",
@@ -23594,12 +23602,12 @@ const Home = ()=>{
                                     src: frontRightImg
                                 }, void 0, false, {
                                     fileName: "src/Pages/Home.jsx",
-                                    lineNumber: 56,
-                                    columnNumber: 13
+                                    lineNumber: 57,
+                                    columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/Pages/Home.jsx",
-                                lineNumber: 55,
+                                lineNumber: 56,
                                 columnNumber: 11
                             }, undefined)
                         ]
@@ -23613,6 +23621,8 @@ const Home = ()=>{
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "secondSectionLeft",
+                                "data-aos": "fade-right",
+                                "data-aos-duration": "800",
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                         children: [
@@ -23620,7 +23630,7 @@ const Home = ()=>{
                                                 className: "ri-arrow-left-right-line"
                                             }, void 0, false, {
                                                 fileName: "src/Pages/Home.jsx",
-                                                lineNumber: 62,
+                                                lineNumber: 64,
                                                 columnNumber: 17
                                             }, undefined),
                                             " Services I ",
@@ -23628,13 +23638,13 @@ const Home = ()=>{
                                                 children: "Offered"
                                             }, void 0, false, {
                                                 fileName: "src/Pages/Home.jsx",
-                                                lineNumber: 62,
+                                                lineNumber: 64,
                                                 columnNumber: 73
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/Pages/Home.jsx",
-                                        lineNumber: 62,
+                                        lineNumber: 64,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -23647,20 +23657,20 @@ const Home = ()=>{
                                                         src: webService
                                                     }, void 0, false, {
                                                         fileName: "src/Pages/Home.jsx",
-                                                        lineNumber: 65,
+                                                        lineNumber: 67,
                                                         columnNumber: 17
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                         children: "Custom Web Applications"
                                                     }, void 0, false, {
                                                         fileName: "src/Pages/Home.jsx",
-                                                        lineNumber: 66,
+                                                        lineNumber: 68,
                                                         columnNumber: 17
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/Pages/Home.jsx",
-                                                lineNumber: 64,
+                                                lineNumber: 66,
                                                 columnNumber: 15
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -23670,20 +23680,20 @@ const Home = ()=>{
                                                         src: EService
                                                     }, void 0, false, {
                                                         fileName: "src/Pages/Home.jsx",
-                                                        lineNumber: 69,
+                                                        lineNumber: 71,
                                                         columnNumber: 17
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                         children: "E-Commerce Development"
                                                     }, void 0, false, {
                                                         fileName: "src/Pages/Home.jsx",
-                                                        lineNumber: 70,
+                                                        lineNumber: 72,
                                                         columnNumber: 17
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/Pages/Home.jsx",
-                                                lineNumber: 68,
+                                                lineNumber: 70,
                                                 columnNumber: 15
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -23693,20 +23703,20 @@ const Home = ()=>{
                                                         src: wordpressService
                                                     }, void 0, false, {
                                                         fileName: "src/Pages/Home.jsx",
-                                                        lineNumber: 73,
+                                                        lineNumber: 75,
                                                         columnNumber: 17
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                         children: "Wordpress Development"
                                                     }, void 0, false, {
                                                         fileName: "src/Pages/Home.jsx",
-                                                        lineNumber: 74,
+                                                        lineNumber: 76,
                                                         columnNumber: 17
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/Pages/Home.jsx",
-                                                lineNumber: 72,
+                                                lineNumber: 74,
                                                 columnNumber: 15
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -23716,36 +23726,38 @@ const Home = ()=>{
                                                         src: FigmaService
                                                     }, void 0, false, {
                                                         fileName: "src/Pages/Home.jsx",
-                                                        lineNumber: 77,
+                                                        lineNumber: 79,
                                                         columnNumber: 17
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                         children: "Figma Designs"
                                                     }, void 0, false, {
                                                         fileName: "src/Pages/Home.jsx",
-                                                        lineNumber: 78,
+                                                        lineNumber: 80,
                                                         columnNumber: 17
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/Pages/Home.jsx",
-                                                lineNumber: 76,
+                                                lineNumber: 78,
                                                 columnNumber: 15
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/Pages/Home.jsx",
-                                        lineNumber: 63,
+                                        lineNumber: 65,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Pages/Home.jsx",
-                                lineNumber: 61,
+                                lineNumber: 63,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "secondSectionRight",
+                                "data-aos": "fade-left",
+                                "data-aos-duration": "800",
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                         children: [
@@ -23753,7 +23765,7 @@ const Home = ()=>{
                                                 className: "ri-braces-line"
                                             }, void 0, false, {
                                                 fileName: "src/Pages/Home.jsx",
-                                                lineNumber: 84,
+                                                lineNumber: 86,
                                                 columnNumber: 17
                                             }, undefined),
                                             " My ",
@@ -23761,13 +23773,13 @@ const Home = ()=>{
                                                 children: "Expertise"
                                             }, void 0, false, {
                                                 fileName: "src/Pages/Home.jsx",
-                                                lineNumber: 84,
+                                                lineNumber: 86,
                                                 columnNumber: 55
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/Pages/Home.jsx",
-                                        lineNumber: 84,
+                                        lineNumber: 86,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -23780,20 +23792,20 @@ const Home = ()=>{
                                                         src: JSEx
                                                     }, void 0, false, {
                                                         fileName: "src/Pages/Home.jsx",
-                                                        lineNumber: 87,
+                                                        lineNumber: 89,
                                                         columnNumber: 17
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                         children: "JavaScript"
                                                     }, void 0, false, {
                                                         fileName: "src/Pages/Home.jsx",
-                                                        lineNumber: 88,
+                                                        lineNumber: 90,
                                                         columnNumber: 17
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/Pages/Home.jsx",
-                                                lineNumber: 86,
+                                                lineNumber: 88,
                                                 columnNumber: 15
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -23803,20 +23815,20 @@ const Home = ()=>{
                                                         src: ReactEx
                                                     }, void 0, false, {
                                                         fileName: "src/Pages/Home.jsx",
-                                                        lineNumber: 91,
+                                                        lineNumber: 93,
                                                         columnNumber: 17
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                         children: "React"
                                                     }, void 0, false, {
                                                         fileName: "src/Pages/Home.jsx",
-                                                        lineNumber: 92,
+                                                        lineNumber: 94,
                                                         columnNumber: 17
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/Pages/Home.jsx",
-                                                lineNumber: 90,
+                                                lineNumber: 92,
                                                 columnNumber: 15
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -23827,20 +23839,20 @@ const Home = ()=>{
                                                         src: FigmaEx
                                                     }, void 0, false, {
                                                         fileName: "src/Pages/Home.jsx",
-                                                        lineNumber: 95,
+                                                        lineNumber: 97,
                                                         columnNumber: 17
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                         children: "Figma"
                                                     }, void 0, false, {
                                                         fileName: "src/Pages/Home.jsx",
-                                                        lineNumber: 96,
+                                                        lineNumber: 98,
                                                         columnNumber: 17
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/Pages/Home.jsx",
-                                                lineNumber: 94,
+                                                lineNumber: 96,
                                                 columnNumber: 15
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -23850,38 +23862,38 @@ const Home = ()=>{
                                                         src: FigmaService
                                                     }, void 0, false, {
                                                         fileName: "src/Pages/Home.jsx",
-                                                        lineNumber: 99,
+                                                        lineNumber: 101,
                                                         columnNumber: 17
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                         children: "Linux"
                                                     }, void 0, false, {
                                                         fileName: "src/Pages/Home.jsx",
-                                                        lineNumber: 100,
+                                                        lineNumber: 102,
                                                         columnNumber: 17
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/Pages/Home.jsx",
-                                                lineNumber: 98,
+                                                lineNumber: 100,
                                                 columnNumber: 15
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/Pages/Home.jsx",
-                                        lineNumber: 85,
+                                        lineNumber: 87,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Pages/Home.jsx",
-                                lineNumber: 83,
+                                lineNumber: 85,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Pages/Home.jsx",
-                        lineNumber: 60,
+                        lineNumber: 62,
                         columnNumber: 9
                     }, undefined)
                 ]
@@ -23902,13 +23914,13 @@ const Home = ()=>{
                                     children: "Experience"
                                 }, void 0, false, {
                                     fileName: "src/Pages/Home.jsx",
-                                    lineNumber: 109,
+                                    lineNumber: 111,
                                     columnNumber: 20
                                 }, void 0)
                             ]
                         }, void 0, true, {
                             fileName: "src/Pages/Home.jsx",
-                            lineNumber: 109,
+                            lineNumber: 111,
                             columnNumber: 11
                         }, void 0),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -23917,37 +23929,37 @@ const Home = ()=>{
                                     children: "1. Softapen"
                                 }, void 0, false, {
                                     fileName: "src/Pages/Home.jsx",
-                                    lineNumber: 111,
+                                    lineNumber: 113,
                                     columnNumber: 13
                                 }, void 0),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("iframe", {
                                     src: "https://softapen.github.io/"
                                 }, void 0, false, {
                                     fileName: "src/Pages/Home.jsx",
-                                    lineNumber: 112,
+                                    lineNumber: 114,
                                     columnNumber: 13
                                 }, void 0)
                             ]
                         }, void 0, true, {
                             fileName: "src/Pages/Home.jsx",
-                            lineNumber: 110,
+                            lineNumber: 112,
                             columnNumber: 11
                         }, void 0)
                     ]
                 }, void 0, true)
             }, void 0, false, {
                 fileName: "src/Pages/Home.jsx",
-                lineNumber: 107,
+                lineNumber: 109,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _subscribeDefault.default), {}, void 0, false, {
                 fileName: "src/Pages/Home.jsx",
-                lineNumber: 116,
+                lineNumber: 118,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                 fileName: "src/Pages/Home.jsx",
-                lineNumber: 117,
+                lineNumber: 119,
                 columnNumber: 7
             }, undefined)
         ]
@@ -26673,6 +26685,9 @@ const Subscribe = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
             className: "subscribe-Container",
+            "data-aos": "fade-up",
+            "data-aos-anchor-placement": "top-bottom",
+            "data-aos-duration": "800",
             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "subscribe",
                 children: [
@@ -26766,6 +26781,8 @@ const Form = ({ sideContent, sideClassName = "", formNextClass = "" })=>{
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: `sideFormSection ${sideClassName}`,
+                    "data-aos": "fade-up",
+                    "data-aos-duration": "800",
                     children: sideContent
                 }, void 0, false, {
                     fileName: "src/components/Form.jsx",
@@ -26777,6 +26794,8 @@ const Form = ({ sideContent, sideClassName = "", formNextClass = "" })=>{
                     name: "Contact",
                     method: "POST",
                     "data-netlify": "true",
+                    "data-aos": "fade-up",
+                    "data-aos-duration": "1200",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                             type: "hidden",
@@ -27243,6 +27262,8 @@ const Card = ({ title, link, img, category })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "Card",
         "data-category": category,
+        "data-aos": "fade-up",
+        "data-aos-duration": "800",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 src: img,

@@ -5,8 +5,8 @@ const Form = ({ sideContent, sideClassName = "", formNextClass = "" }) => {
     return (
         <>
             <section className={`FormPlus ${formNextClass}`}>
-                <div className={`sideFormSection ${sideClassName}`}>{sideContent}</div>
-                <form className="Form" name="Contact" method="POST" data-netlify="true">
+                <div className={`sideFormSection ${sideClassName}`}   data-aos="fade-up" data-aos-duration="800">{sideContent}</div>
+                <form className="Form" name="Contact" method="POST" data-netlify="true"  data-aos="fade-up" data-aos-duration="1200">
                     <input type="hidden" name="form-name" value="Contact" />
 
                     <span className="Formheading">

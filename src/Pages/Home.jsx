@@ -5,7 +5,7 @@ import { Link, NavLink } from "react-router-dom";
 import clipboardCopy from 'clipboard-copy';
 import Subscribe from "../components/Subscribe";
 import Form from "../components/Form";
-import { useRef } from "react";
+
 
 const frontRightImg = new URL('../img/content-pana.svg', import.meta.url).href;
 
@@ -40,25 +40,27 @@ const Home = () => {
       <div className="content">
 
         <div className="frontPage">
-          <div className="leftFront">
+            <div className="leftFront">
 
-            <h1>
-              I'm <span>Abdul Rehman</span>
-            </h1>
+              <h1 data-aos="fade-right" data-aos-duration="800">
+                I'm <span>Abdul Rehman</span>
+              </h1>
 
-            <p>A Passionate Frontend developer, React, Wordpress having 2+ years of Experience in web innovation..</p>
-            <span className="leftBtns">
-              <NavLink className="leftBtns1" onClick={handleWhatsAppClick}><i className="ri-whatsapp-line"></i> WhatsApp</NavLink>
-              <NavLink onClick={handleCopy} className="leftBtns2"><i className="ri-file-copy-line"></i>&nbsp; Copy Email</NavLink>
-            </span>
-          </div>
+              <p data-aos="fade-right" data-aos-duration="1000">A Passionate Frontend developer, React, Wordpress having 2+ years of Experience in web innovation..</p>
+              <span className="leftBtns">
+                <NavLink data-aos="fade-right" data-aos-duration="1200" className="leftBtns1" onClick={handleWhatsAppClick}><i className="ri-whatsapp-line"></i> WhatsApp</NavLink>
+                <NavLink data-aos="fade-right" data-aos-duration="1300" onClick={handleCopy} className="leftBtns2"><i className="ri-file-copy-line"></i>&nbsp; Copy Email</NavLink>
+              </span>
+            </div>
+
           <div className="rightFront">
-            <img src={frontRightImg} />
+              <img src={frontRightImg} />
           </div>
+
         </div>
 
         <section className="secondSection">
-          <div className="secondSectionLeft">
+          <div className="secondSectionLeft" data-aos="fade-right" data-aos-duration="800">
             <h1><i className="ri-arrow-left-right-line"></i> Services I <span>Offered</span></h1>
             <div className="servicesSpan">
               <div className="services">
@@ -80,7 +82,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="secondSectionRight">
+          <div className="secondSectionRight" data-aos="fade-left" data-aos-duration="800">
             <h1><i className="ri-braces-line"></i> My <span>Expertise</span></h1>
             <div className="servicesSpan">
               <div className="services">
