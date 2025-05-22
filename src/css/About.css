@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: metro-regular;
+    src: url(/src/Fonts/Metropolis-Regular.otf);
+}
+@font-face {
+    font-family: metro-bold;
+    src: url(/src/Fonts/metropolis-bold.otf);
+}
+@font-face {
+    font-family: metro-semi;
+    src: url(/src/Fonts/metropolis-semi-bold.otf);
+}
+
+
+:root {
+    --theme-color: #DD3D31;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color:  #F2F6FC;
+
+}
+
+.page4 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.content4 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+}

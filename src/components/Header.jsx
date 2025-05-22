@@ -47,6 +47,10 @@ const Header = () => {
                     <i className="ri-home-8-line hidden-icon"></i>&nbsp;Home
                 </NavLink>
 
+                <NavLink to="/about" className={({ isActive }) => isActive ? "clicked active2" : "clicked"}>
+                <i className="ri-bookmark-3-fill hidden-icon"></i>&nbsp;About
+                </NavLink>
+
                 <NavLink to="/services" className={({ isActive }) => isActive ? "clicked active2" : "clicked"}>
                 <i className="ri-bookmark-3-fill hidden-icon"></i>&nbsp;Services
                 </NavLink>
@@ -56,12 +60,6 @@ const Header = () => {
                 <i className="ri-contacts-book-3-fill hidden-icon"></i>&nbsp;Contact
                 </NavLink>
 
-                <span className="dropdown-click">Developers <i className="ri-corner-right-down-fill"></i>
-                    <span className="dropdown">
-                        <Link className="developer-btn" to="#"><i className="ri-user-3-line"></i> Abdul Rehman</Link>
-                        <Link className="developer-btn" to="#"><i className="ri-user-3-line"></i> Abdullah Al Mahin</Link>
-                    </span>
-                </span>
 
             </nav>
             <span className="carting-system">

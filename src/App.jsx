@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Fallback from './Pages/Fallback'
 import Contact from "./Pages/Contact";
 import 'leaflet/dist/leaflet.css';
+import About from "./Pages/About";
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
 
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About/>}/>
                 <Route path="/services" element={<Services />} />
                 <Route path="/contact" element={<Contact/>}/>
                 <Route path="*" element={<Fallback />}/>
