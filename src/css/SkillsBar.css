@@ -1,0 +1,55 @@
+.skills-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 40px 40px;
+  width: 100%;
+  background: #f9fafb; /* light background */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.skill i {
+  font-size: 34px;
+  font-weight: 300 !important;
+  margin-bottom: 6px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
+}
+
+/* 🎨 Individual skill colors */
+.react i {
+  color: #61dbfb;
+}
+.javascript i {
+  color: #f7df1e;
+}
+.jquery i {
+  color: #0769ad;
+}
+.css i {
+  color: #2965f1;
+}
+.tailwind i {
+  color: #38bdf8;
+}
+.html i {
+  color: #e34c26;
+}
+.linux i {
+  color: #000;
+}

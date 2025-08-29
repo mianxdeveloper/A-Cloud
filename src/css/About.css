@@ -1,45 +1,83 @@
-* {
-    box-sizing: border-box;
+.about {
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #f0f4ff, #f0f4ff, #80a3e2);
+  display: flex;
+  justify-content: center;
 }
 
-@font-face {
-    font-family: metro-regular;
-    src: url(/src/Fonts/Metropolis-Regular.otf);
-}
-@font-face {
-    font-family: metro-bold;
-    src: url(/src/Fonts/metropolis-bold.otf);
-}
-@font-face {
-    font-family: metro-semi;
-    src: url(/src/Fonts/metropolis-semi-bold.otf);
+.about-container {
+  max-width: 100%;
+  width: 97%;
+  text-align: center;
 }
 
-
-:root {
-    --theme-color: #DD3D31;
+.about-header {
+  margin-bottom: 60px;
 }
 
-body,
-html {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-    background-color:  #F2F6FC;
-
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 15px;
 }
 
-.page4 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100vw;
+.about-subtitle {
+  font-size: 19px;
+  color: #555;
+  font-weight: 600;
 }
 
-.content4 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 150px;
+.about-subtitle span {
+  color: var(--theme-color);
+  font-weight: 600;
+}
+
+/* Cards */
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.about-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 40px 25px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.about-icon {
+  font-size: 25px;
+  color: #0077ff;
+  margin-bottom: 15px;
+}
+
+.about-card h3 {
+  font-size: 22px;
+  font-weight: 650;
+  margin-bottom: 12px;
+  color: #424242;
+}
+
+.about-card p {
+  font-size: 18px;
+  color: #747474;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
