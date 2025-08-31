@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import "../css/Home.css";
 import Footer from "../components/Footer";
 import { Link, NavLink } from "react-router-dom";
@@ -10,6 +10,14 @@ import Experience from "../components/Experience";
 import Contact from "../components/Contact";
 
 const Home = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 495);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 495);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const handleWhatsAppClick = () => {
     const phoneNumber = "923227904989";
     const message = "Hi, I want to work with you!";
@@ -49,8 +57,9 @@ const Home = () => {
             </h1>
 
             <p data-aos="fade-right" data-aos-duration="1000">
-              A Passionate Frontend developer, React, Wordpress having 2+ years
-              of Experience in web innovation.
+              {isMobile
+                ? "Frontend developer passionate about React & WordPress." // shown if width ≤ 495px
+                : "A Passionate Frontend developer, React, Wordpress having 2+ years of Experience in web innovation."}
             </p>
             <span className="leftBtns">
               <NavLink

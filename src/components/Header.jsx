@@ -49,19 +49,19 @@ const Header = () => {
         </NavLink>
 
         <a href="#about" className="clicked">
-          <i className="ri-bookmark-3-fill hidden-icon"></i>&nbsp;About
+          <i className="ri-information-line hidden-icon"></i>&nbsp;About
         </a>
 
         <a href="#experience" className="clicked">
-          <i className="ri-bookmark-3-fill hidden-icon"></i>&nbsp;Experience
+          <i className="ri-user-community-line hidden-icon"></i>&nbsp;Experience
         </a>
 
         <a href="#services" className="clicked">
-          <i className="ri-bookmark-3-fill hidden-icon"></i>&nbsp;Services
+          <i className="ri-service-line hidden-icon"></i>&nbsp;Services
         </a>
 
         <a href="#contact" className="clicked">
-          <i className="ri-bookmark-3-fill hidden-icon"></i>&nbsp;Contact
+          <i className="ri-contacts-book-3-line hidden-icon"></i>&nbsp;Contact
         </a>
       </nav>
       <span className="carting-system">
@@ -69,8 +69,7 @@ const Header = () => {
           Blog
         </NavLink>
         <a href="#contact" className="clicked cartBTN">
-          <i className="ri-bookmark-3-fill hidden-icon"></i>&nbsp;Let's work{" "}
-          <i className="ri-arrow-right-up-long-line"></i>
+          Let's work <i className="ri-arrow-right-up-long-line"></i>
         </a>
         <button className="menu" id="menu-toggle">
           <i className="ri-menu-3-fill"></i>

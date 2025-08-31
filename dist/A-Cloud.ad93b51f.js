@@ -23443,7 +23443,6 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
 var _homeCss = require("../css/Home.css");
 var _footer = require("../components/Footer");
 var _footerDefault = parcelHelpers.interopDefault(_footer);
@@ -23460,7 +23459,15 @@ var _experience = require("../components/Experience");
 var _experienceDefault = parcelHelpers.interopDefault(_experience);
 var _contact = require("../components/Contact");
 var _contactDefault = parcelHelpers.interopDefault(_contact);
+var _s = $RefreshSig$();
 const Home = ()=>{
+    _s();
+    const [isMobile, setIsMobile] = (0, _react.useState)(window.innerWidth <= 495);
+    (0, _react.useEffect)(()=>{
+        const handleResize = ()=>setIsMobile(window.innerWidth <= 495);
+        window.addEventListener("resize", handleResize);
+        return ()=>window.removeEventListener("resize", handleResize);
+    }, []);
     const handleWhatsAppClick = ()=>{
         const phoneNumber = "923227904989";
         const message = "Hi, I want to work with you!";
@@ -23496,7 +23503,7 @@ const Home = ()=>{
                                     children: "Hello, I'm Abdul Rehman"
                                 }, void 0, false, {
                                     fileName: "src/Pages/Home.jsx",
-                                    lineNumber: 40,
+                                    lineNumber: 48,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -23506,21 +23513,22 @@ const Home = ()=>{
                                         children: "Software Enginner"
                                     }, void 0, false, {
                                         fileName: "src/Pages/Home.jsx",
-                                        lineNumber: 48,
+                                        lineNumber: 56,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/Pages/Home.jsx",
-                                    lineNumber: 47,
+                                    lineNumber: 55,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                     "data-aos": "fade-right",
                                     "data-aos-duration": "1000",
-                                    children: "A Passionate Frontend developer, React, Wordpress having 2+ years of Experience in web innovation."
+                                    children: isMobile ? "Frontend developer passionate about React & WordPress." // shown if width ≤ 495px
+                                     : "A Passionate Frontend developer, React, Wordpress having 2+ years of Experience in web innovation."
                                 }, void 0, false, {
                                     fileName: "src/Pages/Home.jsx",
-                                    lineNumber: 51,
+                                    lineNumber: 59,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -23536,14 +23544,14 @@ const Home = ()=>{
                                                     className: "ri-whatsapp-line"
                                                 }, void 0, false, {
                                                     fileName: "src/Pages/Home.jsx",
-                                                    lineNumber: 62,
+                                                    lineNumber: 71,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 " WhatsApp"
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Pages/Home.jsx",
-                                            lineNumber: 56,
+                                            lineNumber: 65,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
@@ -23556,20 +23564,20 @@ const Home = ()=>{
                                                     className: "ri-file-copy-line"
                                                 }, void 0, false, {
                                                     fileName: "src/Pages/Home.jsx",
-                                                    lineNumber: 70,
+                                                    lineNumber: 79,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 "\xa0 Copy Email"
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Pages/Home.jsx",
-                                            lineNumber: 64,
+                                            lineNumber: 73,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/Pages/Home.jsx",
-                                    lineNumber: 55,
+                                    lineNumber: 64,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -23580,68 +23588,69 @@ const Home = ()=>{
                                         className: "ri-arrow-down-s-line"
                                     }, void 0, false, {
                                         fileName: "src/Pages/Home.jsx",
-                                        lineNumber: 80,
+                                        lineNumber: 89,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/Pages/Home.jsx",
-                                    lineNumber: 75,
+                                    lineNumber: 84,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/Pages/Home.jsx",
-                            lineNumber: 39,
+                            lineNumber: 47,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Pages/Home.jsx",
-                        lineNumber: 38,
+                        lineNumber: 46,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _skillBarDefault.default), {}, void 0, false, {
                         fileName: "src/Pages/Home.jsx",
-                        lineNumber: 85,
+                        lineNumber: 94,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
                         fileName: "src/Pages/Home.jsx",
-                        lineNumber: 86,
+                        lineNumber: 95,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _experienceDefault.default), {}, void 0, false, {
                         fileName: "src/Pages/Home.jsx",
-                        lineNumber: 87,
+                        lineNumber: 96,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _servicesDefault.default), {}, void 0, false, {
                         fileName: "src/Pages/Home.jsx",
-                        lineNumber: 88,
+                        lineNumber: 97,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
                         fileName: "src/Pages/Home.jsx",
-                        lineNumber: 89,
+                        lineNumber: 98,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Pages/Home.jsx",
-                lineNumber: 37,
+                lineNumber: 45,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                 fileName: "src/Pages/Home.jsx",
-                lineNumber: 91,
+                lineNumber: 100,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Pages/Home.jsx",
-        lineNumber: 36,
+        lineNumber: 44,
         columnNumber: 5
     }, undefined);
 };
+_s(Home, "jYQrtDTkUbjCrXOvvWVqCY0jNFU=");
 _c = Home;
 exports.default = Home;
 var _c;
@@ -46989,6 +46998,7 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _experienceCss = require("../css/Experience.css");
+var _s = $RefreshSig$();
 const experiences = [
     {
         year: "2025 - Present",
@@ -47010,6 +47020,20 @@ const experiences = [
     }
 ];
 const Experience = ()=>{
+    _s();
+    (0, _react.useEffect)(()=>{
+        function handleResize() {
+            let contents = document.querySelectorAll(".timeline-content p");
+            if (!contents.length) return;
+            contents.forEach((content)=>{
+                if (window.innerWidth <= 495) content.style.display = "none";
+                else content.style.display = "inline-flex";
+            });
+        }
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return ()=>window.removeEventListener("resize", handleResize);
+    }, []);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: "experience",
         id: "experience",
@@ -47019,7 +47043,7 @@ const Experience = ()=>{
                 children: "Experience"
             }, void 0, false, {
                 fileName: "src/components/Experience.jsx",
-                lineNumber: 31,
+                lineNumber: 51,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -47030,14 +47054,14 @@ const Experience = ()=>{
                         children: "professional"
                     }, void 0, false, {
                         fileName: "src/components/Experience.jsx",
-                        lineNumber: 33,
+                        lineNumber: 53,
                         columnNumber: 12
                     }, undefined),
                     " journey so far"
                 ]
             }, void 0, true, {
                 fileName: "src/components/Experience.jsx",
-                lineNumber: 32,
+                lineNumber: 52,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -47049,7 +47073,7 @@ const Experience = ()=>{
                                 className: "timeline-dot"
                             }, void 0, false, {
                                 fileName: "src/components/Experience.jsx",
-                                lineNumber: 38,
+                                lineNumber: 58,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -47060,7 +47084,7 @@ const Experience = ()=>{
                                         children: exp.year
                                     }, void 0, false, {
                                         fileName: "src/components/Experience.jsx",
-                                        lineNumber: 40,
+                                        lineNumber: 60,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -47074,46 +47098,47 @@ const Experience = ()=>{
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/components/Experience.jsx",
-                                                lineNumber: 42,
+                                                lineNumber: 62,
                                                 columnNumber: 28
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/Experience.jsx",
-                                        lineNumber: 41,
+                                        lineNumber: 61,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         children: exp.description
                                     }, void 0, false, {
                                         fileName: "src/components/Experience.jsx",
-                                        lineNumber: 44,
+                                        lineNumber: 64,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Experience.jsx",
-                                lineNumber: 39,
+                                lineNumber: 59,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, index, true, {
                         fileName: "src/components/Experience.jsx",
-                        lineNumber: 37,
+                        lineNumber: 57,
                         columnNumber: 11
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/Experience.jsx",
-                lineNumber: 35,
+                lineNumber: 55,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Experience.jsx",
-        lineNumber: 30,
+        lineNumber: 50,
         columnNumber: 5
     }, undefined);
 };
+_s(Experience, "OD7bBpZva5O2jO+Puf00hKivP7c=");
 _c = Experience;
 exports.default = Experience;
 var _c;
@@ -47407,7 +47432,7 @@ const Header = ()=>{
                         className: "clicked",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                className: "ri-bookmark-3-fill hidden-icon"
+                                className: "ri-information-line hidden-icon"
                             }, void 0, false, {
                                 fileName: "src/components/Header.jsx",
                                 lineNumber: 52,
@@ -47425,7 +47450,7 @@ const Header = ()=>{
                         className: "clicked",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                className: "ri-bookmark-3-fill hidden-icon"
+                                className: "ri-user-community-line hidden-icon"
                             }, void 0, false, {
                                 fileName: "src/components/Header.jsx",
                                 lineNumber: 56,
@@ -47443,7 +47468,7 @@ const Header = ()=>{
                         className: "clicked",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                className: "ri-bookmark-3-fill hidden-icon"
+                                className: "ri-service-line hidden-icon"
                             }, void 0, false, {
                                 fileName: "src/components/Header.jsx",
                                 lineNumber: 60,
@@ -47461,7 +47486,7 @@ const Header = ()=>{
                         className: "clicked",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                className: "ri-bookmark-3-fill hidden-icon"
+                                className: "ri-contacts-book-3-line hidden-icon"
                             }, void 0, false, {
                                 fileName: "src/components/Header.jsx",
                                 lineNumber: 64,
@@ -47496,21 +47521,13 @@ const Header = ()=>{
                         href: "#contact",
                         className: "clicked cartBTN",
                         children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                className: "ri-bookmark-3-fill hidden-icon"
-                            }, void 0, false, {
-                                fileName: "src/components/Header.jsx",
-                                lineNumber: 72,
-                                columnNumber: 11
-                            }, undefined),
-                            "\xa0Let's work",
-                            " ",
+                            "Let's work ",
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
                                 className: "ri-arrow-right-up-long-line"
                             }, void 0, false, {
                                 fileName: "src/components/Header.jsx",
-                                lineNumber: 73,
-                                columnNumber: 11
+                                lineNumber: 72,
+                                columnNumber: 22
                             }, undefined)
                         ]
                     }, void 0, true, {
@@ -47525,12 +47542,12 @@ const Header = ()=>{
                             className: "ri-menu-3-fill"
                         }, void 0, false, {
                             fileName: "src/components/Header.jsx",
-                            lineNumber: 76,
+                            lineNumber: 75,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Header.jsx",
-                        lineNumber: 75,
+                        lineNumber: 74,
                         columnNumber: 9
                     }, undefined)
                 ]

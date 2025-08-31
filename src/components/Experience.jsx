@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../css/Experience.css";
 
 const experiences = [
@@ -26,6 +26,26 @@ const experiences = [
 ];
 
 const Experience = () => {
+  useEffect(() => {
+    function handleResize() {
+      let contents = document.querySelectorAll(".timeline-content p");
+      if (!contents.length) return;
+
+      contents.forEach((content) => {
+        if (window.innerWidth <= 495) {
+          content.style.display = "none";
+        } else {
+          content.style.display = "inline-flex";
+        }
+      });
+    }
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <section className="experience" id="experience">
       <h2 className="experience-title">Experience</h2>

@@ -272,6 +272,93 @@ body, html {
   background-color: var(--theme-color);
 }
 
+@media (width >= 945px) and (width <= 1045px) {
+  .frontPage {
+    margin: 5vw 0;
+  }
+
+  .rightFront img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .leftFront h1 {
+    font-size: 5vw;
+  }
+
+  .leftFront p {
+    width: 70%;
+    font-size: 2.2vw;
+  }
+
+  .leftBtns1, .leftBtns2 {
+    text-align: center;
+    margin: 1vw 0;
+    padding: 1.6vw 2.5vw;
+    font-size: 2.2vw;
+  }
+
+  .leftBtns2 {
+    margin-left: 20px;
+  }
+
+  .services {
+    margin: 3vw 2vw;
+  }
+
+  .services img {
+    width: 80%;
+    max-width: 80%;
+  }
+
+  .secondSectionLeft h1, .secondSectionRight h1 {
+    font-size: 4vw;
+  }
+
+  .services h3 {
+    font-size: 2vw;
+    line-height: 20px;
+  }
+
+  .secondSection {
+    flex-direction: column;
+    align-items: center;
+    padding: 5vw 0;
+  }
+
+  .secondSectionLeft, .secondSectionRight {
+    width: 90%;
+    margin: 3vw auto;
+    padding: 4vw 3vw;
+    box-shadow: 0 0 10px #e0e0e0;
+  }
+
+  .experienceContainer {
+    align-self: stretch;
+    margin: 5vw auto;
+    padding: 4vw 2vw;
+    width: 97% !important;
+  }
+
+  .experienceContainer h1 {
+    margin: 2.5vw 0;
+    font-size: 5vw;
+  }
+
+  .experienceContainer div {
+    width: 100%;
+  }
+
+  .experienceContainer div p {
+    margin-bottom: 2vw;
+    font-size: 3vw;
+  }
+
+  .Formpp {
+    flex-direction: column !important;
+  }
+}
+
 @media (width >= 845px) and (width <= 945px) {
   .frontPage {
     margin: 5vw 0;
@@ -287,20 +374,19 @@ body, html {
   }
 
   .leftFront p {
+    width: 70%;
     font-size: 2.2vw;
-  }
-
-  .leftBtns {
-    flex-direction: column;
-    align-self: stretch;
   }
 
   .leftBtns1, .leftBtns2 {
     text-align: center;
-    width: 100%;
     margin: 1vw 0;
-    padding: 1.6vw;
+    padding: 1.6vw 2.5vw;
     font-size: 2.2vw;
+  }
+
+  .leftBtns2 {
+    margin-left: 20px;
   }
 
   .services {
@@ -378,7 +464,11 @@ body, html {
   }
 
   .leftFront h1 {
-    font-size: 6.5vw;
+    font-size: 50px;
+  }
+
+  .introName {
+    font-size: 25px;
   }
 
   .leftFront h1 span {
@@ -386,22 +476,23 @@ body, html {
   }
 
   .leftFront p {
-    text-align: center;
-    font-size: 3vw;
-  }
-
-  .leftBtns {
-    flex-direction: row;
-    align-self: stretch;
-    margin-bottom: 4vw;
+    width: 90%;
+    font-size: 26px;
   }
 
   .leftBtns1, .leftBtns2 {
     text-align: center;
-    width: 100%;
-    margin: 1vw;
-    padding: 1.6vw;
-    font-size: 2.8vw;
+    margin: 1vw 0;
+    padding: 1.6vw 2.5vw;
+    font-size: 22px;
+  }
+
+  .leftBtns2 {
+    margin-left: 20px;
+  }
+
+  .content {
+    margin-top: 160px;
   }
 
   .services {
@@ -467,6 +558,10 @@ body, html {
     margin: 12vw auto;
   }
 
+  .content {
+    margin-top: 160px;
+  }
+
   .leftFront, .rightFront {
     align-items: center;
     width: 90%;
@@ -479,31 +574,31 @@ body, html {
   }
 
   .leftFront h1 {
-    font-size: 7.5vw;
+    font-size: 45px;
   }
 
   .leftFront h1 span {
     color: var(--theme-color);
   }
 
-  .leftFront p {
-    text-align: center;
-    margin: 2vw auto;
-    font-size: 3.5vw;
+  .introName {
+    font-size: 23px;
   }
 
-  .leftBtns {
-    flex-direction: row;
-    align-self: stretch;
-    margin: 4vw 0;
+  .leftFront p {
+    width: 90%;
+    font-size: 22px;
   }
 
   .leftBtns1, .leftBtns2 {
     text-align: center;
-    width: 100%;
-    margin: 1vw;
-    padding: 2vw;
-    font-size: 3vw;
+    margin: 1vw 0;
+    padding: 1.6vw 2.8vw;
+    font-size: 20px;
+  }
+
+  .leftBtns2 {
+    margin-left: 20px;
   }
 
   .services {
@@ -589,23 +684,27 @@ body, html {
   }
 
   .leftFront p {
-    text-align: center;
-    margin: 2vw auto;
-    font-size: 4vw;
+    width: 100%;
+    font-size: 20px;
   }
 
-  .leftBtns {
-    flex-direction: row;
-    align-self: stretch;
-    margin: 4vw 0 8vw;
+  .scroll-down-btn {
+    margin-bottom: 120px;
   }
 
   .leftBtns1, .leftBtns2 {
     text-align: center;
-    width: 100%;
-    margin: 1vw;
-    padding: 3vw;
-    font-size: 3.8vw;
+    margin: 1vw 0;
+    padding: 1.8vw 3.5vw;
+    font-size: 20px;
+  }
+
+  .leftBtns2 {
+    margin-left: 20px;
+  }
+
+  .content {
+    margin-top: 150px !important;
   }
 
   .servicesSpan {
@@ -678,6 +777,29 @@ body, html {
 
   .Formpp {
     flex-direction: column !important;
+  }
+}
+
+@media (width <= 395px) {
+  .leftBtns1, .leftBtns2 {
+    text-align: center;
+    margin: 1vw 0;
+    padding: 1.8vw 3.5vw;
+    font-size: 17px;
+  }
+
+  .leftBtns2 {
+    margin-left: 10px;
+  }
+}
+
+@media (width <= 320px) {
+  .leftBtns {
+    flex-direction: column;
+  }
+
+  .leftBtns2 {
+    margin-left: 0;
   }
 }
 
@@ -1070,6 +1192,10 @@ hr {
 }
 
 @media (width <= 900px) {
+  .about {
+    width: 100%;
+  }
+
   .about-cards {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -1078,6 +1204,7 @@ hr {
 
 .skills-bar {
   background: #f9fafb;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 80px;
@@ -1739,6 +1866,79 @@ nav a:hover {
   display: none;
 }
 
+@media (width >= 945px) and (width <= 1045px) {
+  .menu {
+    background-color: #0000;
+    border: none;
+    outline: none;
+    margin: 0 20px 0 40px;
+    font-size: 25px;
+    display: flex;
+  }
+
+  .logo, .logo img {
+    width: 30%;
+  }
+
+  .carting-system {
+    justify-content: flex-end;
+    width: 70%;
+  }
+
+  nav {
+    opacity: 0;
+    background-color: #fff;
+    border-radius: 5px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 12vw;
+    transition: opacity .3s, visibility 0s .3s;
+    position: absolute;
+    top: 20vh;
+    left: -90vw;
+    box-shadow: 0 0 25px #b3b3b3;
+  }
+
+  nav.menu-active {
+    opacity: 1;
+    transition: opacity .7s, visibility;
+    left: 5vw;
+  }
+
+  .clicked {
+    margin: 80px 40px;
+    font-size: 2.2vw;
+  }
+
+  .hidden-icon {
+    display: inline-flex;
+  }
+
+  .dropdown-click {
+    margin: 0 40px;
+    font-size: 2.2vw;
+  }
+
+  .active2 {
+    margin: 80px 40px;
+  }
+
+  .active2:after {
+    width: 45px;
+  }
+
+  .dropdown {
+    margin-top: 2vw;
+    box-shadow: 0 0 10px #868686;
+  }
+
+  .developer-btn {
+    font-size: 1.9vw;
+  }
+}
+
 @media (width >= 845px) and (width <= 945px) {
   .menu {
     background-color: #0000;
@@ -1906,6 +2106,10 @@ nav a:hover {
     margin: 0 20px 0 40px;
     font-size: 25px;
     display: flex;
+  }
+
+  .blog {
+    font-size: 20px !important;
   }
 
   .logo {

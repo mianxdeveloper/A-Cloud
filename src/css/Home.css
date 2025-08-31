@@ -305,6 +305,96 @@ html {
   color: white;
 }
 
+@media (min-width: 945px) and (max-width: 1045px) {
+  .frontPage {
+    margin: 5vw 0;
+  }
+
+  .rightFront img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .leftFront h1 {
+    font-size: 5vw;
+  }
+
+  .leftFront p {
+    font-size: 2.2vw;
+    width: 70%;
+  }
+
+  .leftBtns1,
+  .leftBtns2 {
+    font-size: 2.2vw;
+    margin: 1vw 0;
+    padding: 1.6vw 2.5vw;
+    text-align: center;
+  }
+
+  .leftBtns2 {
+    margin-left: 20px;
+  }
+
+  .services {
+    margin: 3vw 2vw;
+  }
+
+  .services img {
+    width: 80%;
+    max-width: 80%;
+  }
+
+  .secondSectionLeft h1,
+  .secondSectionRight h1 {
+    font-size: 4vw;
+  }
+
+  .services h3 {
+    font-size: 2vw;
+    line-height: 20px;
+  }
+
+  .secondSection {
+    flex-direction: column;
+    align-items: center;
+    padding: 5vw 0;
+  }
+
+  .secondSectionLeft,
+  .secondSectionRight {
+    width: 90%;
+    padding: 4vw 3vw;
+    margin: 3vw auto;
+    box-shadow: 0 0 10px rgb(224, 224, 224);
+  }
+
+  .experienceContainer {
+    align-self: stretch;
+    width: 97% !important;
+    margin: 5vw auto;
+    padding: 4vw 2vw;
+  }
+
+  .experienceContainer h1 {
+    font-size: 5vw;
+    margin: 2.5vw 0;
+  }
+
+  .experienceContainer div {
+    width: 100%;
+  }
+
+  .experienceContainer div p {
+    font-size: 3vw;
+    margin-bottom: 2vw;
+  }
+
+  .Formpp {
+    flex-direction: column !important;
+  }
+}
+
 @media (min-width: 845px) and (max-width: 945px) {
   .frontPage {
     margin: 5vw 0;
@@ -321,20 +411,19 @@ html {
 
   .leftFront p {
     font-size: 2.2vw;
-  }
-
-  .leftBtns {
-    flex-direction: column;
-    align-self: stretch;
+    width: 70%;
   }
 
   .leftBtns1,
   .leftBtns2 {
     font-size: 2.2vw;
-    width: 100%;
     margin: 1vw 0;
-    padding: 1.6vw;
+    padding: 1.6vw 2.5vw;
     text-align: center;
+  }
+
+  .leftBtns2 {
+    margin-left: 20px;
   }
 
   .services {
@@ -415,7 +504,11 @@ html {
   }
 
   .leftFront h1 {
-    font-size: 6.5vw;
+    font-size: 50px;
+  }
+
+  .introName {
+    font-size: 25px;
   }
 
   .leftFront h1 span {
@@ -423,23 +516,24 @@ html {
   }
 
   .leftFront p {
-    font-size: 3vw;
-    text-align: center;
-  }
-
-  .leftBtns {
-    flex-direction: row;
-    align-self: stretch;
-    margin-bottom: 4vw;
+    font-size: 26px;
+    width: 90%;
   }
 
   .leftBtns1,
   .leftBtns2 {
-    font-size: 2.8vw;
-    width: 100%;
-    margin: 1vw;
-    padding: 1.6vw;
+    font-size: 22px;
+    margin: 1vw 0;
+    padding: 1.6vw 2.5vw;
     text-align: center;
+  }
+
+  .leftBtns2 {
+    margin-left: 20px;
+  }
+
+  .content {
+    margin-top: 160px;
   }
 
   .services {
@@ -509,6 +603,10 @@ html {
     flex-direction: column;
   }
 
+  .content {
+    margin-top: 160px;
+  }
+
   .leftFront,
   .rightFront {
     width: 90%;
@@ -522,32 +620,32 @@ html {
   }
 
   .leftFront h1 {
-    font-size: 7.5vw;
+    font-size: 45px;
   }
 
   .leftFront h1 span {
     color: var(--theme-color);
   }
 
-  .leftFront p {
-    font-size: 3.5vw;
-    text-align: center;
-    margin: 2vw auto;
+  .introName {
+    font-size: 23px;
   }
 
-  .leftBtns {
-    flex-direction: row;
-    align-self: stretch;
-    margin: 4vw 0;
+  .leftFront p {
+    font-size: 22px;
+    width: 90%;
   }
 
   .leftBtns1,
   .leftBtns2 {
-    font-size: 3vw;
-    width: 100%;
-    margin: 1vw;
-    padding: 2vw;
+    font-size: 20px;
+    margin: 1vw 0;
+    padding: 1.6vw 2.8vw;
     text-align: center;
+  }
+
+  .leftBtns2 {
+    margin-left: 20px;
   }
 
   .services {
@@ -638,24 +736,28 @@ html {
   }
 
   .leftFront p {
-    font-size: 4vw;
-    text-align: center;
-    margin: 2vw auto;
+    font-size: 20px;
+    width: 100%;
   }
 
-  .leftBtns {
-    flex-direction: row;
-    align-self: stretch;
-    margin: 4vw 0 8vw 0;
+  .scroll-down-btn {
+    margin-bottom: 120px;
   }
 
   .leftBtns1,
   .leftBtns2 {
-    font-size: 3.8vw;
-    width: 100%;
-    margin: 1vw;
-    padding: 3vw;
+    font-size: 20px;
+    margin: 1vw 0;
+    padding: 1.8vw 3.5vw;
     text-align: center;
+  }
+
+  .leftBtns2 {
+    margin-left: 20px;
+  }
+
+  .content {
+    margin-top: 150px !important;
   }
 
   .servicesSpan {
@@ -730,5 +832,29 @@ html {
 
   .Formpp {
     flex-direction: column !important;
+  }
+}
+
+@media (max-width: 395px) {
+  .leftBtns1,
+  .leftBtns2 {
+    font-size: 17px;
+    margin: 1vw 0;
+    padding: 1.8vw 3.5vw;
+    text-align: center;
+  }
+
+  .leftBtns2 {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .leftBtns {
+    flex-direction: column;
+  }
+
+  .leftBtns2 {
+    margin-left: 0px;
   }
 }

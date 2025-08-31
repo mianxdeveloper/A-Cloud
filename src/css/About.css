@@ -76,6 +76,9 @@
 
 /* Responsive */
 @media (max-width: 900px) {
+  .about {
+    width: 100%;
+  }
   .about-cards {
     grid-template-columns: 1fr;
     gap: 20px;

@@ -160,6 +160,81 @@ nav a:hover {
   display: none;
 }
 
+@media (min-width: 945px) and (max-width: 1045px) {
+  .menu {
+    display: flex;
+    margin: 0 20px 0 40px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 25px;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  .logo img {
+    width: 30%;
+  }
+  .carting-system {
+    width: 70%;
+    justify-content: flex-end;
+  }
+
+  nav {
+    position: absolute;
+    top: 20vh;
+    left: -90vw;
+    width: 90vw;
+    height: 12vw;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 0 25px rgb(179, 179, 179);
+    flex-direction: row;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0s 0.3s;
+    border-radius: 5px;
+  }
+
+  nav.menu-active {
+    left: 5vw;
+    opacity: 1;
+    transition: opacity 0.7s ease, visibility 0s 0s;
+  }
+
+  .clicked {
+    margin: 80px 40px;
+    font-size: 2.2vw;
+  }
+
+  .hidden-icon {
+    display: inline-flex;
+  }
+
+  .dropdown-click {
+    font-size: 2.2vw;
+    margin: 0 40px;
+  }
+
+  .active2 {
+    /* margin: 0 25px; */
+    margin: 80px 40px;
+  }
+  .active2::after {
+    width: 45px;
+  }
+
+  .dropdown {
+    margin-top: 2vw;
+    box-shadow: 0 0 10px rgb(134, 134, 134);
+  }
+  .developer-btn {
+    font-size: 1.9vw;
+  }
+}
+
 @media (min-width: 845px) and (max-width: 945px) {
   .menu {
     display: flex;
@@ -326,6 +401,11 @@ nav a:hover {
     border: none;
     font-size: 25px;
   }
+
+  .blog {
+    font-size: 20px !important;
+  }
+
   .logo {
     width: 30%;
   }
