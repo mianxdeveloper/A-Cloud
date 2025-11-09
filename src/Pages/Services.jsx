@@ -1,80 +1,85 @@
-import React, { useEffect } from "react";
+// Services.jsx
+import React from "react";
+import {
+  Code,
+  Smartphone,
+  Wrench,
+  Plug,
+  Globe,
+  ShoppingCart,
+} from "lucide-react";
 import "../css/services.css";
-import Card from "../components/Card";
-
-const img2 = new URL("../img/web.jpeg", import.meta.url).href;
-const img3 = new URL("../img/design.avif", import.meta.url).href;
-const img4 = new URL("../img/custom.jpg", import.meta.url).href;
-const img5 = new URL("../img/figma.jpg", import.meta.url).href;
-const img6 = new URL("../img/wordpress.jpg", import.meta.url).href;
-const img7 = new URL("../img/ecommerce.png", import.meta.url).href;
 
 const Services = () => {
-  useEffect(() => {
-    const filterButtons = document.querySelectorAll(".filter");
-    const cards = document.querySelectorAll(".Card");
-
-    filterButtons.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        filterButtons.forEach((b) => b.classList.remove("active3"));
-        btn.classList.add("active3");
-
-        const selectedCategory = btn.getAttribute("data-category");
-
-        cards.forEach((card) => {
-          const cardCategory = card.getAttribute("data-category");
-
-          if (selectedCategory === "all" || cardCategory === selectedCategory) {
-            card.style.display = "flex";
-            card.classList.add("fade-in");
-          } else {
-            card.style.display = "none";
-            card.classList.remove("fade-in");
-          }
-        });
-      });
-    });
-
-    return () => {
-      filterButtons.forEach((btn) => {
-        btn.replaceWith(btn.cloneNode(true));
-      });
-    };
-  }, []);
+  const services = [
+    {
+      icon: Code,
+      title: "Web Development",
+      description:
+        "Custom web applications built with modern frameworks and best practices.",
+    },
+    {
+      icon: Smartphone,
+      title: "Responsive Design",
+      description:
+        "Mobile-first designs that work seamlessly across all devices.",
+    },
+    {
+      icon: Wrench,
+      title: "Custom Frontend Solutions",
+      description:
+        "Tailored frontend solutions to meet your specific business needs.",
+    },
+    {
+      icon: Plug,
+      title: "API Integration",
+      description:
+        "Seamless integration with third-party APIs and backend services.",
+    },
+    {
+      icon: Globe,
+      title: "WordPress Development",
+      description: "Custom WordPress themes and plugins for your business.",
+    },
+    {
+      icon: ShoppingCart,
+      title: "E-Commerce Sites",
+      description:
+        "Full-featured online stores with secure payment integration.",
+    },
+  ];
 
   return (
-    <section className="page2" id="services">
-      <div className="content2">
-        {/* Section Heading */}
-        <h2 className="services-heading">Services</h2>
-        <p className="services-tagline">
-          Helping businesses and individuals grow with modern web solutions
-        </p>
+    <section id="services" className="services-section">
+      <div className="services-container">
+        <div className="services-content">
+          <h2 className="services-title">Services</h2>
+          <p className="services-subtitle">
+            Helping startups and individuals grow through clean web development
+          </p>
 
-        {/* Filter Tabs */}
-        <div className="filterBtns">
-          <button className="filter active3" data-category="all">
-            All
-          </button>
-          <button className="filter" data-category="web">
-            Web Development
-          </button>
-          <button className="filter" data-category="custom">
-            Custom Design
-          </button>
-          <button className="filter" data-category="wordpress">
-            Wordpress
-          </button>
-        </div>
-
-        {/* Service Cards Grid */}
-        <div className="AllCards">
-          <Card title="Web Development" link="#" img={img2} category="web" />
-          <Card title="Web Design" link="#" img={img3} category="web" />
-          <Card title="Custom Design" link="#" img={img4} category="custom" />
-          <Card title="Figma" link="#" img={img5} category="custom" />
-          <Card title="Wordpress" link="#" img={img6} category="wordpress" />
-          <Card title="Ecommerce Site" link="#" img={img7} category="web" />
+          <div className="services-grid">
+            {services.map((service, index) => {
+              const Icon = service.icon;
+              return (
+                <div
+                  key={service.title}
+                  className="service-card"
+                  style={{
+                    animationDelay: `${index * 0.1}s`,
+                    animationFillMode: "backwards",
+                  }}
+                >
+                  <div className="service-icon-container">
+                    <Icon className="service-icon" />
+                  </div>
+                  <h3 className="service-title">{service.title}</h3>
+                  <p className="service-description">{service.description}</p>
+                  <button className="service-button">Learn More →</button>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>

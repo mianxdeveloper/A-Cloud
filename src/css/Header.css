@@ -15,7 +15,7 @@ html {
 
 :root {
   /* --theme-color: #DD3D31; */
-  --theme-color: #0077ff;
+  --theme-color: #667eea !important;
   --font-family: "Rajdhani", sans-serif;
 }
 
@@ -30,14 +30,23 @@ header {
   flex-direction: row;
   height: 90px;
   width: 100%;
-  background: rgba(255, 255, 255, 0.9);
+  /* background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(80px);
   -webkit-backdrop-filter: blur(80px) !important;
-  box-shadow: 0 0 40px rgb(206, 205, 205);
+  box-shadow: 0 0 40px rgb(206, 205, 205); */
+  background: transparent;
+  transition: background 0.3s ease;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
+}
+
+header.scrolled-header {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(80px);
+  -webkit-backdrop-filter: blur(80px) !important;
+  box-shadow: 0 0 40px rgb(206, 205, 205);
 }
 
 .logo,
@@ -49,11 +58,32 @@ header {
   flex-direction: row;
 }
 
-.logo {
+/* .logo {
   font-size: 18px;
   font-weight: 500;
+} */
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 3s ease-in-out infinite;
+  letter-spacing: -0.5px;
 }
 
+@keyframes gradientShift {
+  0%,
+  100% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 100% center;
+  }
+}
 .logo img {
   width: 25%;
 }
@@ -321,14 +351,14 @@ nav a:hover {
     font-size: 25px;
   }
   .logo {
-    width: 30%;
+    width: 35%;
   }
 
   .logo img {
     width: 38%;
   }
   .carting-system {
-    width: 70%;
+    width: 65%;
     justify-content: flex-end;
   }
 
@@ -407,14 +437,14 @@ nav a:hover {
   }
 
   .logo {
-    width: 30%;
+    width: 40%;
   }
 
   .logo img {
     width: 40%;
   }
   .carting-system {
-    width: 70%;
+    width: 60%;
     justify-content: flex-end;
   }
 
@@ -492,7 +522,8 @@ nav a:hover {
     font-size: 25px;
   }
   .logo {
-    width: 30%;
+    width: 50%;
+    font-size: 22px;
   }
   .logo img {
     width: 45%;
@@ -504,7 +535,7 @@ nav a:hover {
     display: none;
   }
   .carting-system {
-    width: 70%;
+    width: 50%;
     justify-content: flex-end;
   }
 
@@ -564,5 +595,11 @@ nav a:hover {
   .developer-btn {
     padding: 4vw 5vw;
     font-size: 4vw;
+  }
+}
+
+@media (max-width: 340px) {
+  .logo {
+    font-size: 18px;
   }
 }

@@ -3,11 +3,13 @@ import "../css/Home.css";
 import Footer from "../components/Footer";
 import { Link, NavLink } from "react-router-dom";
 import clipboardCopy from "clipboard-copy";
-import About from "../components/About";
 import SkillsBar from "../components/SkillBar";
-import Services from "./Services";
 import Experience from "../components/Experience";
 import Contact from "../components/Contact";
+import AboutSection from "../components/AboutSection";
+import Services from "../components/Services";
+import Projects from "../components/Projects";
+import { motion } from "framer-motion";
 
 const Home = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 495);
@@ -53,13 +55,35 @@ const Home = () => {
               Hello, I'm Abdul Rehman
             </h3>
             <h1 data-aos="fade-right" data-aos-duration="800">
-              <span>Software Enginner</span>
+              <motion.span
+                style={{
+                  background:
+                    "linear-gradient(90deg, #667eea, #764ba2, #f093fb, #f5576c, #667eea)",
+                  backgroundSize: "200% auto",
+                  backgroundClip: "text",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  display: "inline-block",
+                  fontWeight: 600,
+                  padding: "0 2px",
+                }}
+                initial={{ backgroundPosition: "-200% center" }}
+                animate={{ backgroundPosition: "200% center" }}
+                transition={{
+                  repeat: Infinity,
+                  repeatType: "loop",
+                  duration: 3.0,
+                  ease: "linear",
+                }}
+              >
+                Frontend Developer
+              </motion.span>
             </h1>
 
             <p data-aos="fade-right" data-aos-duration="1000">
               {isMobile
                 ? "Frontend developer passionate about React & WordPress." // shown if width ≤ 495px
-                : "A Passionate Frontend developer, React, Wordpress having 2+ years of Experience in web innovation."}
+                : "A Passionate Frontend developer, React, Wordpress having 3+ years of Experience in web innovation."}
             </p>
             <span className="leftBtns">
               <NavLink
@@ -92,9 +116,10 @@ const Home = () => {
         </div>
 
         <SkillsBar />
-        <About />
+        <AboutSection />
         <Experience />
         <Services />
+        <Projects />
         <Contact />
       </div>
       <Footer />

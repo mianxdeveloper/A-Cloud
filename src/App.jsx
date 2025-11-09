@@ -4,6 +4,7 @@ import Home from "./Pages/Home";
 import Header from "./components/Header";
 import Fallback from "./Pages/Fallback";
 import "leaflet/dist/leaflet.css";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   return (
@@ -14,6 +15,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="*" element={<Fallback />} />
       </Routes>
+
+      <ScrollToTop />
     </Router>
   );
 };

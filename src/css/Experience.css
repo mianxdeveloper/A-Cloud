@@ -67,7 +67,7 @@
 
 .timeline-year {
   font-weight: 600;
-  color: #007bff;
+  color: var(--theme-color);
   display: block;
   margin-bottom: 8px;
 }
@@ -79,7 +79,7 @@
 }
 
 .timeline h3 span {
-  color: #007bff;
+  color: var(--theme-color);
   font-weight: 500;
 }
 
@@ -93,7 +93,7 @@
 .timeline-dot {
   width: 20px;
   height: 20px;
-  background: #007bff;
+  background: var(--theme-color);
   border-radius: 50%;
   position: absolute;
   left: 50%;

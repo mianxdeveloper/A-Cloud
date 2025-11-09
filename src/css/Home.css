@@ -21,7 +21,7 @@
 
 :root {
   /* --theme-color: #dd3d31; */
-  --theme-color: #0077ff;
+  --theme-color: #667eea !important;
   --font-family: "Rajdhani", sans-serif;
 }
 
@@ -38,6 +38,13 @@ html {
   align-items: center;
   flex-direction: column;
   width: 100vw;
+  background: linear-gradient(
+    to right,
+    rgba(173, 216, 230, 0.2) 0%,
+    transparent 20%,
+    transparent 80%,
+    rgba(173, 216, 230, 0.2) 100%
+  );
 }
 
 .content {
@@ -45,7 +52,7 @@ html {
   align-items: center;
   flex-direction: column;
   font-family: var(--font-family);
-  margin-top: 14vw;
+  margin-top: 12vw;
 }
 
 .frontPage {
@@ -100,15 +107,16 @@ html {
 }
 
 .leftBtns1 {
-  padding: 1vw 2vw;
+  padding: 0.6vw 2vw;
   margin-right: 3vw;
   text-decoration: none;
-  border: none;
-  background-color: var(--theme-color);
-  color: white;
   border-radius: 5px;
   font-size: 1.3vw;
   font-weight: 600;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  border: 1px solid #a779d4;
 }
 
 .leftBtns1:hover {
@@ -118,7 +126,7 @@ html {
 .leftBtns2 {
   border: 1px solid var(--theme-color);
   text-decoration: none;
-  padding: 1vw 2vw;
+  padding: 0.6vw 2vw;
   border-radius: 5px;
   color: var(--theme-color);
   font-size: 1.3vw;
@@ -328,7 +336,7 @@ html {
   .leftBtns2 {
     font-size: 2.2vw;
     margin: 1vw 0;
-    padding: 1.6vw 2.5vw;
+    padding: 8px 18px;
     text-align: center;
   }
 
@@ -418,7 +426,7 @@ html {
   .leftBtns2 {
     font-size: 2.2vw;
     margin: 1vw 0;
-    padding: 1.6vw 2.5vw;
+    padding: 8px 18px;
     text-align: center;
   }
 
@@ -524,7 +532,7 @@ html {
   .leftBtns2 {
     font-size: 22px;
     margin: 1vw 0;
-    padding: 1.6vw 2.5vw;
+    padding: 10px 20px;
     text-align: center;
   }
 
@@ -747,7 +755,7 @@ html {
   .leftBtns1,
   .leftBtns2 {
     font-size: 20px;
-    margin: 1vw 0;
+    margin: 20px auto;
     padding: 1.8vw 3.5vw;
     text-align: center;
   }
@@ -839,7 +847,7 @@ html {
   .leftBtns1,
   .leftBtns2 {
     font-size: 17px;
-    margin: 1vw 0;
+    margin: 20px auto;
     padding: 1.8vw 3.5vw;
     text-align: center;
   }

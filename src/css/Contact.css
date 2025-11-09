@@ -1,15 +1,34 @@
 .contact-section {
   padding: 80px 20px;
   background: linear-gradient(
-    135deg,
-    #f0f4ff,
-    #f0f4ff,
-    #93aee0,
-    #f0f4ff,
-    #f0f4ff
+    to right,
+    rgba(173, 216, 230, 0.2) 0%,
+    transparent 20%,
+    transparent 80%,
+    rgba(173, 216, 230, 0.2) 100%
   );
   text-align: center;
   width: 100%;
+}
+
+.contact-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+      circle at 20% 80%,
+      rgba(120, 119, 198, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(255, 119, 198, 0.1) 0%,
+      transparent 50%
+    );
+  pointer-events: none;
 }
 
 .contact-header h2 {
@@ -61,7 +80,7 @@
 .info-box i {
   font-size: 1.5rem;
   margin-right: 12px;
-  color: #007bff;
+  color: var(--theme-color);
   font-weight: 300;
 }
 
@@ -89,12 +108,12 @@
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #007bff;
+  border-color: var(--theme-color);
   outline: none;
 }
 
 .contact-form button {
-  background: #007bff;
+  background: var(--theme-color);
   color: white;
   padding: 14px;
   border: none;
