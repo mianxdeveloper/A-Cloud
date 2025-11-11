@@ -3,25 +3,18 @@ import "../css/Experience.css";
 
 const experiences = [
   {
-    year: "2025 - Present",
+    year: "11/2024 - 07/2025",
     role: "REACT Developer",
     company: "Visqode",
     description:
       "Building responsive web applications using React, TailwindCSS, and modern JavaScript frameworks.",
   },
   {
-    year: "2022 - 2025",
-    role: "Frontend developer",
-    company: "Abbas Tech Solutions",
+    year: "05/2024 - 10/2024",
+    role: "Frontend developer Intern",
+    company: "Mindra Solutions",
     description:
       "Developed and maintained scalable frontend applications with smooth user experiences.",
-  },
-  {
-    year: "2020 - 2022",
-    role: "Intern Software Engineer",
-    company: "Startup Hub",
-    description:
-      "Worked on API integrations, UI improvements, and learned agile development practices.",
   },
 ];
 
@@ -59,7 +52,7 @@ const Experience = () => {
             <div className="timeline-content">
               <span className="timeline-year">{exp.year}</span>
               <h3>
-                {exp.role} <span>@ {exp.company}</span>
+                {exp.role} <br /> <span>@ {exp.company}</span>
               </h3>
               <p>{exp.description}</p>
             </div>
