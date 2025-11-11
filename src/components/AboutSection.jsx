@@ -1,7 +1,8 @@
 // AboutSection.jsx
-import React from "react";
+import React, { useRef } from "react";
 import "../css/AboutSection.css";
 const profile = new URL("../img/Ab.jpeg", import.meta.url).href;
+const CV = new URL("../files/AbdulRehmanResume.pdf", import.meta.url).href;
 
 const AboutSection = () => {
   const scrollToProjects = () => {
@@ -13,6 +14,8 @@ const AboutSection = () => {
       });
     }
   };
+
+  const downloadRef = useRef(null);
 
   return (
     <section id="about" className="about-section">
@@ -76,7 +79,18 @@ const AboutSection = () => {
               <button className="btn btn-primary" onClick={scrollToProjects}>
                 View My Work <i className="ri-corner-right-down-fill"></i>
               </button>
-              <button className="btn btn-secondary">
+              <a
+                ref={downloadRef}
+                href={CV}
+                download="AbdulRehmanResume.pdf"
+                style={{ display: "none" }}
+              ></a>
+
+              {/* Download CV button */}
+              <button
+                className="btn btn-secondary"
+                onClick={() => downloadRef.current.click()}
+              >
                 Download CV <i className="ri-download-2-line"></i>
               </button>
             </div>
